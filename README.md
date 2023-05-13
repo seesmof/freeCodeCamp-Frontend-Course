@@ -30,7 +30,6 @@ This is the archive of all of my projects and tasks from the FreeCodeCamp course
 ## Links
 
 - [Live Preview](https://seesmof.github.io/testimonials-grid-section/)
-- [Frontend Mentor Solution URL](https://www.frontendmentor.io/solutions/responsive-with-tailwindcss-w85VzY60YF)
 
 ## License
 
