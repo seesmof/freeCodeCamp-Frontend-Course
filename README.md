@@ -17,9 +17,9 @@ This is the archive of all of my projects and tasks from the FreeCodeCamp course
 
 ## Screenshots
 
-![](./img/)
+![](./img/msedge_Ffiv9G5sN3.png)
 
-![](./img/)
+![](./img/msedge_PAPVTCvSgm.png)
 
 ## Built with
 
