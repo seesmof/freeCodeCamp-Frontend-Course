@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Space+Mono:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border-style: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --accent: #ef8354;
+  --accent-hover: hsl(18, 83%, 50%);
+  --back: #2d3142;
+  --back-dark: #242630;
+  --back-dark-hover: hsl(230, 14%, 10%);
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background: var(--back);
+  color: #fff;
+  font-size: 1.1rem;
+}
+body a {
+  color: var(--accent);
+  transition: 0.3s ease;
+}
+body a:hover {
+  color: var(--accent-hover);
+}
+body h2 {
+  color: var(--accent);
+}
+
+.head {
+  background: var(--back-dark);
+  padding: 1em;
+  margin-bottom: 1em;
+  width: auto;
+}
+.head h1 {
+  color: var(--accent);
+  text-align: center;
+  font-size: 2em;
+}
+
+main {
+  display: block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+main input,
+main button {
+  background: var(--back-dark);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  color: #fff;
+  padding: 1rem;
+  font-family: inherit;
+  transition: all ease 0.3s;
+}
+main input:hover,
+main button:hover {
+  background: var(--back-dark-hover);
+}
+main button {
+  cursor: pointer;
+  border-radius: 3rem;
+  text-align: center;
+  width: 7em;
+}
+main fieldset {
+  padding: 1.5em;
+  border: none;
+}
+main label,
+main input[type="checkbox, radio"] {
+  cursor: pointer;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  background: var(--back-dark);
+  width: auto;
+  padding: 1em;
+}
+footer span,
+footer a {
+  color: var(--accent);
+  transition: 0.3s ease;
+}
+footer span:hover,
+footer a:hover {
+  color: var(--accent-hover);
+}/*# sourceMappingURL=style.css.map */
