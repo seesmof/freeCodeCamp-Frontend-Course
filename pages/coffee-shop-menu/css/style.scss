@@ -1,0 +1,94 @@
+:root {
+  --dark: #1c1c21;
+  --back-mandat: #e6ccb2;
+  --accent: #7c3b1f;
+}
+
+body {
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  color: var(--dark);
+  font-family: monospace, sans-serif;
+
+  a {
+    text-decoration: none;
+    color: var(--accent);
+    transition: 0.3s ease;
+
+    &:hover {
+      cursor: pointer;
+      color: var(--dark);
+    }
+  }
+
+  .body {
+    width: 80%;
+    background: var(--back-mandat);
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 2em;
+  }
+
+  header {
+    .container-fluid {
+      border-bottom: 2px solid var(--accent);
+      h1 {
+        font-weight: bold;
+        color: var(--accent);
+
+        a {
+          &:hover {
+            color: var(--dark);
+          }
+        }
+      }
+
+      p {
+        font-style: italic;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  main {
+    .container {
+      img {
+        width: 3rem;
+        height: 3rem;
+        margin-top: -1rem;
+      }
+
+      h2 {
+        margin: 1.5rem;
+      }
+
+      article {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+        font-size: 1.2rem;
+
+        .flavor,
+        .dessert {
+          text-align: left;
+        }
+
+        .price {
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  footer {
+    margin-top: 2em;
+    font-weight: 100;
+    .container {
+      border-top: 2px solid var(--accent);
+      padding-top: 2em;
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

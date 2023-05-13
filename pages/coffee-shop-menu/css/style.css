@@ -1,0 +1,73 @@
+:root {
+  --dark: #1c1c21;
+  --back-mandat: #e6ccb2;
+  --accent: #7c3b1f;
+}
+
+body {
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  color: var(--dark);
+  font-family: monospace, sans-serif;
+}
+body a {
+  text-decoration: none;
+  color: var(--accent);
+  transition: 0.3s ease;
+}
+body a:hover {
+  cursor: pointer;
+  color: var(--dark);
+}
+body .body {
+  width: 80%;
+  background: var(--back-mandat);
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 2em;
+}
+body header .container-fluid {
+  border-bottom: 2px solid var(--accent);
+}
+body header .container-fluid h1 {
+  font-weight: bold;
+  color: var(--accent);
+}
+body header .container-fluid h1 a:hover {
+  color: var(--dark);
+}
+body header .container-fluid p {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+body main .container img {
+  width: 3rem;
+  height: 3rem;
+  margin-top: -1rem;
+}
+body main .container h2 {
+  margin: 1.5rem;
+}
+body main .container article {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+body main .container article .flavor,
+body main .container article .dessert {
+  text-align: left;
+}
+body main .container article .price {
+  text-align: right;
+}
+body footer {
+  margin-top: 2em;
+  font-weight: 100;
+}
+body footer .container {
+  border-top: 2px solid var(--accent);
+  padding-top: 2em;
+}
+body footer .container p {
+  font-size: 1.2rem;
+}/*# sourceMappingURL=style.css.map */
