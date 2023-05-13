@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <header>
+        <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+        <p id="description" class="description text-center">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+
+      <!-- form -->
+      <form id="survey-form">
+        <div class="form-section">
+          <label for="name">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />Name
+          </label>
+        </div>
+        <div class="form-section">
+          <label for="email">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your Email"
+              required
+            />Email
+          </label>
+        </div>
+        <div class="form-section">
+          <label for="age">
+            <input
+              type="number"
+              name="age"
+              id="age"
+              placeholder="Age"
+              min="13"
+              max="120"
+              required
+            />Age <span>(optional)</span>
+          </label>
+        </div>
+        <div class="form-section">
+          <label for="role"
+            >Which option best describes your current role?
+            <select name="role" id="role">
+              <option disabled selected value="">Select current role</option>
+              <option value="student">Student</option>
+              <option value="f-t-job">Full Time Job</option>
+              <option value="f-t-learn">Full Time Learner</option>
+              <option value="foxtrot-uniform">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-section">
+          <div>Would you recommend freeCodeCamp to a friend?</div>
+          <label for="def">
+            <input type="radio" name="would-you" id="def" />Definitely
+          </label>
+          <label for="mb">
+            <input type="radio" name="would-you" id="mb" />Maybe
+          </label>
+          <label for="nope">
+            <input type="radio" name="would-you" id="nope" />Not sure
+          </label>
+        </div>
+        <div class="form-section">
+          <label for="features"
+            >What is your favorite feature of freeCodeCamp?
+            <select>
+              <option selected disabled value="">Select an option</option>
+              <option value="challenger">Challenges</option>
+              <option value="projects">Projects</option>
+              <option value="community">Community</option>
+              <option value="open">Open Source</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-section">
+          <div>
+            What would you like to see improved?
+            <span>(Check all that apply)</span>
+          </div>
+          <label for="front">
+            <input type="checkbox" name="what" id="front" />Front-end Projects
+          </label>
+          <label for="back">
+            <input type="checkbox" name="what" id="back" />Back-end Projects
+          </label>
+          <label for="data">
+            <input type="checkbox" name="what" id="data" />Data Visualization
+          </label>
+          <label for="challenges">
+            <input type="checkbox" name="what" id="challenges" />Challenges
+          </label>
+          <label for="open">
+            <input type="checkbox" name="what" id="open" />Open Source Community
+          </label>
+          <label for="gitter">
+            <input type="checkbox" name="what" id="gitter" />Gitter help rooms
+          </label>
+          <label for="videos">
+            <input type="checkbox" name="what" id="videos" />Videos
+          </label>
+          <label for="city">
+            <input type="checkbox" name="what" id="city" />City Meetups
+          </label>
+          <label for="wiki">
+            <input type="checkbox" name="what" id="wiki" />Wiki
+          </label>
+          <label for="forum">
+            <input type="checkbox" name="what" id="forum" />Forum
+          </label>
+          <label for="additional">
+            <input type="checkbox" name="what" id="additional" />Additional
+            Courses
+          </label>
+        </div>
+        <div class="form-section">
+          <label for="suggestions">
+            <textarea
+              name="suggestions"
+              id="suggestions"
+              cols="30"
+              rows="3"
+            ></textarea
+            >Any comments or suggestions?
+          </label>
+        </div>
+        <div class="form-section">
+          <button type="submit" class="button">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

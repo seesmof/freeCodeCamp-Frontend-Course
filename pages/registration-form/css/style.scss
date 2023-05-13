@@ -1,0 +1,153 @@
+/* root */
+:root {
+  --primary: #0a0a23;
+  --light: #3b3b4f;
+  --dark: rgba(0, 0, 0, 0.75);
+  --back: #1b1b32;
+  --txt: #f5f6f7;
+  --txt-hover: rgba(245, 246, 247, 0.8);
+  --acc: #457b9d;
+}
+
+* {
+  transition: 0.3s ease;
+  scroll-behavior: smooth;
+}
+
+/* body */
+
+body {
+  background: var(--back);
+  color: var(--txt);
+
+  a {
+    text-decoration: none;
+    color: var(--acc);
+
+    &:hover {
+      color: var(--txt);
+    }
+  }
+}
+
+header,
+footer {
+  font-family: monospace, sans-serif;
+  font-size: 1.1rem;
+}
+
+/* header */
+header {
+  background: var(--primary);
+  padding: 1rem;
+  border-bottom: 3px solid var(--light);
+
+  p {
+    color: var(--acc);
+  }
+
+  .under {
+    color: var(--txt);
+
+    span {
+      color: var(--acc);
+      font-weight: bold;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* main */
+main {
+  form {
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    width: 60vw;
+
+    fieldset {
+      padding: 1rem 0;
+      border-bottom: 3px solid var(--light);
+
+      span {
+        color: var(--acc);
+        font-weight: bold;
+      }
+
+      label {
+        display: block;
+        margin: 0.5rem 0;
+        cursor: pointer;
+
+        &:hover {
+          color: var(--txt-hover);
+        }
+      }
+
+      input,
+      textarea,
+      select {
+        width: 100%;
+        margin: 10px 0 0 0;
+        background: var(--primary);
+        border: 1px solid var(--dark);
+        color: var(--txt);
+        border-radius: 1rem;
+        padding: 0.5rem;
+
+        &:hover {
+          background: var(--dark);
+        }
+      }
+
+      .inline {
+        width: unset;
+        margin: 0 0.5em 0 0;
+        vertical-align: middle;
+      }
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+
+    .button {
+      background: var(--primary);
+      color: var(--txt);
+      border-radius: 2rem;
+      padding: 0.5rem;
+
+      &:hover {
+        background: var(--dark);
+      }
+
+      &:active {
+        background: var(--light);
+      }
+    }
+  }
+}
+
+/* footer */
+footer {
+  background: var(--primary);
+  padding: 1rem;
+  margin-top: 1rem;
+  border-top: 3px solid var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  span {
+    color: var(--acc);
+
+    &:hover {
+      color: var(--txt-hover);
+    }
+  }
+}

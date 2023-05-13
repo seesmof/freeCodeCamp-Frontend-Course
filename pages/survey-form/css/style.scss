@@ -1,0 +1,50 @@
+/* root */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+
+/* body */
+
+body {
+  background: rgba(60, 9, 108, 0.4);
+}
+
+/* header */
+
+header {
+  color: var(--color-white);
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-style: italic;
+  }
+}
+
+/* form */
+
+form {
+  background: var(--color-darkblue-alpha);
+  border-radius: 1rem;
+  padding: 2rem;
+  color: var(--color-white);
+
+  input,
+  select,
+  label {
+    display: flex;
+    flex-direction: column;
+  }
+}
